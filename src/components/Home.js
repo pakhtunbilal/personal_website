@@ -20,7 +20,7 @@ const Home = () => {
          <span className='redHighlight'>Bilal Pathan</span> designs products & systems to empower human agency.
         </div>
         <div className="div projectHeading">
-          <h5>My personal Projects</h5>
+          <h5 className='photoHeading'>My personal Projects</h5>
         </div>
         <div className="div">
           <div className="row">

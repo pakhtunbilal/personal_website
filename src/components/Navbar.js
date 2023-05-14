@@ -5,26 +5,21 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
-
   const navigate = useNavigate()
   const handleClick=(e) =>{
     if(e.target.id === "work"){
-      console.log("work")
       document.getElementById(e.target.id).classList.add("highlight")
       document.getElementById("about").classList.remove("highlight")
       navigate('/')
     }else if(e.target.id === "about"){
-      console.log("about")
       document.getElementById(e.target.id).classList.add("highlight")
       document.getElementById("work").classList.remove("highlight")
       navigate('/about')
     }else if(e.target.id === "workLi"){
-      console.log("work")
       document.getElementById("work").classList.add("highlight")
       document.getElementById("about").classList.remove("highlight")
       navigate('/')
     }else if(e.target.id === "aboutLi"){
-      console.log("about")
       document.getElementById("about").classList.add("highlight")
       document.getElementById("work").classList.remove("highlight")
       navigate('/about')
@@ -36,7 +31,7 @@ const Navbar = () => {
       <div className="container ">
         <div className="navContainer">
           <nav className='customNav' onClick={handleClick}>
-            <span className='NavSpan highlight' id='work' > <Link to="/" className='li' id='workLi'>Work </Link></span>
+            <span className='NavSpan  highlight' id='work' > <Link to="/" className='li' id='workLi'>Work </Link></span>
             <span className='NavSpan' id='about'> <Link to="/about" className='li' id='aboutLi' >About </Link></span>
           </nav>
 
