@@ -23,7 +23,7 @@ const Photos = () => {
             <Single id="rise" ibtn=" rise" photo={rise} description="Anything for the fresh air." />
           </div>
           <div className="secondRow">
-            <Single id="vaibhu" ibtn="vaibhu " photo={vaibhu} description="Best-friends through thick and thin." />
+            {/* <Single id="vaibhu" ibtn="vaibhu " photo={vaibhu} description="Best-friends through thick and thin." /> */}
             <Single id="java" ibtn="java " photo={java} description="Two wheels brings true smile." />
             <Single id="rewasa" ibtn="rewasa " photo={rewasa} description="This one is from my 18th birthday." />
           </div>
