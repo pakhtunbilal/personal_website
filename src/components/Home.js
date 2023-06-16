@@ -4,9 +4,10 @@ import Project from './Project';
 const personal = require('../images/personal.png');
 const todolist = require('../images/todolist.png');
 const secrets = require('../images/secrets.png');
-const iNotebook = require('../images/iNotebook.png')
-const eCommerceDesktop = require('../images/eCommerceDesktop.png')
-const dailyJournal = require('../images/dailyJournal.png')
+const iNotebook = require('../images/iNotebook.png');
+const eCommerceDesktop = require('../images/eCommerceDesktop.png');
+const dailyJournal = require('../images/dailyJournal.png');
+const promptopia = require('../images/Promptopia.png')
 
 const Home = () => {
 
@@ -16,6 +17,7 @@ const Home = () => {
   const iNotebookLink = "https://645cad38550a24754c488bd7--luminous-kitten-6fb777.netlify.app/";
   const ECommerceDesktopLink = "https://main--harmonious-donut-f50c7d.netlify.app/signup";
   const DailyJournalLink = "https://daily-journal-uq28.onrender.com";
+  const promptopiaLink = "https://mellifluous-naiad-aea2ce.netlify.app/"
 
   return (
     <>
@@ -28,6 +30,8 @@ const Home = () => {
         </div>
         <div className="div">
           <div className="row">
+            <Project link={promptopiaLink} photo={promptopia} heading="Promptopia" about="Promptopia, A Full Stack Next.js web application is an open-source AI prompting tool for modern world to discover, create and share creative prompts after
+logging in using Google authentication" year="2023"></Project>
             <Project link={ECommerceDesktopLink} photo={eCommerceDesktop} heading="E-Commerce-Desktop" about="E-Commerce-Desktop is a MERN Stack project which allows user to list products with name,
 price, compony etc. User can perform CRUD operations on their listed products.
 " year="2023"></Project>
